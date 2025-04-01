@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "outDir": "dist",
+      "module": "NodeNext",
+      "target": "ES6",
+      "strict": true
+    },
+    "include": ["index.ts"],
+    "exclude": ["node_modules"]
+  }

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir dist && node esbuild.cjs"
+    "build": "node esbuild.cjs && npm run zip-file",
+    "zip-file": "bestzip dist/Form-Handler-bundled.zip dist/Form-Handler-bundled.cjs"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,10 @@
     "esbuild": "^0.25.2",
     "esbuild-plugin-tsc": "^0.5.0",
     "node-fetch": "^3.3.2",
+    "nvm": "^0.0.4",
     "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "bestzip": "^2.2.1"
   }
 }
